@@ -15,45 +15,78 @@
         }
 
         body {
-            background-color: rgb(3, 44, 70);
+            background-color: rgb(9, 1, 61);
             color: beige;
-            font-family: 'poppins' , sans-serif;
+            font-family: 'poppins', sans-serif;
         }
 
-        
         nav {
             display: flex;
             justify-content: space-around;
+            height: 80px;
+            align-items: center;
+            background-color: rgb(5, 31, 82);
         }
-        nav ul{
+
+        nav ul {
             display: flex;
             justify-content: space-around;
             list-style: none;
-            
+
         }
-        nav ul li{
+
+        nav ul li {
             display: flex;
             justify-content: center;
             margin: 0 23px;
+        }
+
+        .FirstSection {
+            margin: 33px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .LeftSection {
+            background-color: rgb(1, 70, 70);
+            width: 38%;
+        }
+
+        .RightSection {
+            
+            width: 38%;
         }
     </style>
 </head>
 
 <body>
-    <footer>
+    <header>
         <nav>
-            <div class="left"><h1>Jalaj's Portfolio</h1></div>
+            <div class="left">
+                <h1>Jalaj's Portfolio</h1>
+            </div>
             <div class="right">
-                 <ul>
+                <ul>
                     <li>Home</li>
                     <li>About</li>
                     <li>Services</li>
                     <li>Projects</li>
                     <li>Contact Me</li>
 
-            </ul></div>
+                </ul>
+            </div>
         </nav>
-    </footer>
+    </header>
+    <main>
+        <section class="FirstSection">
+            <div class="LeftSection">Hey! I am Jalaj
+                <div>and I am a web developer</div>
+            </div>
+            <div class="RightSection">
+                <img src="https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-developers-are-coding-programs-on-computers-programmers-are-analyzing-data-png-image_11902650.png" alt="">
+            </div>
+        </section>
+    </main>
 
 </body>
 
