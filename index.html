@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
@@ -15,7 +16,7 @@
         }
 
         body {
-            background-color: rgb(9, 1, 61);
+            background-color: rgb(6, 1, 45);
             color: beige;
             font-family: 'poppins', sans-serif;
         }
@@ -40,6 +41,14 @@
             justify-content: center;
             margin: 0 23px;
         }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(56, 125, 217);
+            font-size: 1.03 rem;
+        }
 
         .FirstSection {
             margin: 60px 0;
@@ -48,15 +57,23 @@
         }
 
         .LeftSection {
-           
-            margin: 23px 0;
-            font-size: 3rem;
+
+            margin: 60px auto;
+            font-size: 2.5rem;
             width: 38%;
         }
 
         .RightSection {
-            
+            display: flex;
+            align-items: center;
             width: 38%;
+        }
+
+        .purple {
+            color: rgb(142, 75, 206);
+        }
+        #element{
+            color:rgb(142, 75, 206) ;
         }
     </style>
 </head>
@@ -69,11 +86,11 @@
             </div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                   <li><a href="/">Home</a></li>
+                   <li><a href="/">About</a></li>
+                   <li><a href="/">Services</a></li>
+                   <li><a href="/">Projects</a></li>
+                   <li><a href="/">Contact Me</a></li>
 
                 </ul>
             </div>
@@ -81,15 +98,25 @@
     </header>
     <main>
         <section class="FirstSection">
-            <div class="LeftSection">Hey! I am Jalaj
-                <div>and I am a Web Developer.</div>
+            <div class="LeftSection">Hey! My name is<span class="purple"> Jalaj</span>
+                <div>and I am a passsionate</div>
+                <span id="element"></span>
+               
             </div>
             <div class="RightSection">
-                <img src="https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-developers-are-coding-programs-on-computers-programmers-are-analyzing-data-png-image_11902650.png" alt="">
+                <img src="https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-developers-are-coding-programs-on-computers-programmers-are-analyzing-data-png-image_11902650.png"
+                    alt="">
             </div>
         </section>
     </main>
-
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'content creator' , 'college student'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 
 </html>
